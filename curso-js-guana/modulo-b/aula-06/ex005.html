@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8 with BOM">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>exercicio 5</title>
+    <style>
+      body{
+        background: #666;
+        font: normal 29pt Arial;
+        text-align: center;
+      }
+      img{
+        margin: 0 auto;
+        width: 50%;
+      }
+    </style>
+</head>
+<body>
+  <div class="rich"></div>
+ <script>
+  var salb = window.prompt('digite seu salário bruto')
+  var porcent = 12 * salb / 100
+
+  var salli= salb - porcent
+  document.write(`o seu salario liquido é de  R$${salli} <br>`)
+
+var r= salli >= 2000? document.write(`<br><img src="rich.gif">`):document.write(`<br><img src="homeless.gif"`)
+  
+</script>
+</body>
+</html>
+
+
+
+
+    
+    
+
+

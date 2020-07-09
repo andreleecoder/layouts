@@ -21,6 +21,7 @@ section {
     margin: auto;
     padding: 15px;
     width: 500px;
+    height: 290px;
     text-align: left;
     line-height: 40px;
 }
@@ -31,15 +32,9 @@ footer {
     font-style: italic;
 }
 
-.center {
-    text-align: center;
-}
 
 img {
     width: 350px;
+    height: 350px;
     border-radius: 50%;
-}
-
-select#flista {
-    width: 150px;
 }

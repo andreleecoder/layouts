@@ -4,25 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de números</title>
+    <title>tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Analisador de números</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div id="inputs">
-            Digite um numero de 1 a 100:
-            <input type="number" name="fnum" id="fnum">
-            <input type="button" value="adicionar" id="add">
-            <br> <select name="flista" id="flista" size="6"></select>
-            <br> <input type="button" value="finalizar" id="finish">
+            <p>Número: <input type="number" name="number" id="txtn"> <input type="button" value="gerar tabuada" onclick="calcular()"></p>
 
         </div>
-        <div id="res">
-            Olá
+        <div id="result">
+          <select name="tabuada" id="seltab">
+            <option>digite um número acima</option>
+          </select>
+
         </div>
     </section>
     <footer>

@@ -1,45 +1,43 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: rgba(70, 142, 236);
+body{
+    background-color: rgba(70,142,236);
     font: normal 15pt Arial;
 }
-
-header {
+header{
     color: #fff;
     text-align: center;
-}
 
-section {
+}
+section{
     background: #fff;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
     margin: auto;
     padding: 15px;
     width: 500px;
-    text-align: left;
-    line-height: 40px;
-}
+    
 
-footer {
+}
+footer{
     color: #fff;
     text-align: center;
     font-style: italic;
-}
 
-.center {
-    text-align: center;
 }
-
-img {
-    width: 350px;
+img{
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
-
-select#flista {
-    width: 150px;
+.azul{
+    color: rgb(39, 123, 250);
+    font-weight: bold;
+}
+.rosa{
+    color:rgb(241, 66, 139);
+    font-weight: bold;
 }

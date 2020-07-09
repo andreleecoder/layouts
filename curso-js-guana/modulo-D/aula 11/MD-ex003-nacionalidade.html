@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+</head>
+<body>
+    digite o o pais em que você vive <input type="text" id="pais">
+    <input type="button" value="enviar" id="enviar">
+    <div id="result">
+
+    </div>
+    <script>
+        var e = window.document.getElementById('enviar')
+         e.addEventListener('click', clicar)
+
+        function clicar(){
+         var rs = window.document.getElementById('result')
+         var p = window.document.querySelector('input#pais')
+         var pais = String(p.value)
+         var min = pais.toLocaleLowerCase()
+         
+           if (min == 'brasil') {
+            rs.innerHTML=`<p>brasileiro</p>`
+           } else {
+            rs.innerHTML=`<p>estrangeiro</p>`  
+           }
+        }
+      
+    </script>
+</body>
+</html>
+
+

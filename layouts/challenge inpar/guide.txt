@@ -1,0 +1,17 @@
+Gradientes{
+  BANNER: linear-gradient(74.34056996452614deg, rgba(243, 148, 58, 1) 28.1015625%, rgba(243, 148, 58, 1) 28.665147569444446%, rgba(235, 91, 76, 1) 66.74739583333333%);
+  BOTÃO: linear-gradient(90.04026406892581deg, rgba(95, 20, 120, 1) 13.050781250000002%, rgba(95, 20, 120, 1) 14.131618923611112%, rgba(174, 39, 111, 1) 87.16536458333333%);
+  BOTÃO-HOVER: linear-gradient(89.29010320028351deg, rgba(174, 39, 111, 1) 11.703125%, rgba(95, 20, 120, 1) 82.1193576388889%, rgba(95, 20, 120, 1) 83.16145833333334%);
+  BOX: linear-gradient(74.34056996452614deg, rgba(235, 91, 76, 1) 28.1015625%, rgba(235, 91, 76, 1) 28.665147569444446%, rgba(174, 39, 111, 1) 66.74739583333333%);
+  FOOTER: linear-gradient(121.42004685768666deg, rgba(235, 91, 76, 1) 3.924479166666667%, rgba(235, 91, 76, 1) 4.664279513888889%, rgba(174, 39, 111, 1) 54.65364583333333%);
+}
+Cores{
+  laranja: #e76316;
+  roxo: #5f1478;
+  cinza:#454545;
+}
+Fonte: @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+Largura máxima do body: 842px;
+
+Imagem referência: https://i.imgur.com/lVCvuso.jpg

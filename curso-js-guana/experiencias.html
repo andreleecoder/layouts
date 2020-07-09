@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8 with BOM">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>exercicio 5</title>
+    <style>
+      body{
+        background: #666;
+        font: normal 29pt Arial;
+        text-align: center;
+      }
+      img{
+        margin: 0 auto;
+        width: 50%;
+      }
+    </style>
+</head>
+<body>
+  <h1>Digite seu salário bruto</h1>
+  <input type="number"  id="salab">
+  <input type="button" value="enter" onclick="result()">
+  <div id="res">salário</div>
+
+ <script>
+   function result () {
+  var salb = window.document.getElementById('salab')
+  var sa = Number(salb.value)
+  var rs = window.document.getElementById('res')
+  var porcent = 12 * sa / 100
+  var salli= sa - porcent 
+  
+
+   if (salli >= 2000) {
+    rs.innerHTML=`o seu salario liquido é de  R$${salli} <br><img src="rich.gif">` 
+   } else{
+    rs.innerHTML=`o seu salario liquido é de  R$${salli} <br><img src="homeless.gif">`
+   }
+
+}
+</script>
+</body>
+</html>
+
+
+
+
+    
+    
+
+
