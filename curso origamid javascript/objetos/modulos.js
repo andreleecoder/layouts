@@ -1,7 +1,7 @@
-function areaQuadrado(l) {
+export function areaQuadrado(l) {
     return l * l;
 }
 
-function perimetroQuadradoname(l) {
+export function perimetroQuadrado(l) {
     return 4 * l;
 }

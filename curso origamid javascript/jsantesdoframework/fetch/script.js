@@ -1,0 +1,1 @@
+fetch("https://ranekapi.dev.wp-json/api/produto");
