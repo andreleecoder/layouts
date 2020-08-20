@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React para Iniciantes</title>
+
+    <!-- Carrega o React, React Dom e Babel -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+    <style>
+        .change {
+            background: #444;
+            color: #FFF;
+            margin: auto;
+            height: 50%;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">App</div>
+    <!-- Precisa indicar para o Babel que ele deve transpilar o código -->
+    <script type="text/babel">
+        const Button = () => {
+            const change = () => {
+                let box = document.getElementById('app')
+                box.classList.add('change')
+            }
+            return <button onClick={change}>mudar</button>
+        }
+        const Titulo = () => <h1>Hello Mundo</h1>
+        const Compras = () => {
+            const [contador, setContador] = React.useState(0)
+            function comprar() {
+                setContador(contador + 1)
+
+            }
+            return (
+                <div>
+                    <button onClick={comprar}>Comprar</button>
+                    <p>Total:{contador}</p>
+                    <p>Preço: R$ {contador * 250}</p>
+                </div>
+            )
+        }
+        const App = () => {
+            return (
+                <div>
+                    <Titulo />
+                    <p>Meu App</p>
+                    <Button />
+                    <Compras />
+                </div>
+            );
+        }
+
+        // Renderiza o componente App no elemento que tiver id = app
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+
+</html>
